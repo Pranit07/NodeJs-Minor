@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Materialize icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!--Manual javascript-->
+    <script src="/javascripts/project.js"></script>
+
+
+
+    <style>
+        .root {
+            width: 100%;
+            height: 10000px;
+            display: flex;
+            background-color: #273c75;
+            justify-content: center;
+        }
+
+        .subdiv {
+            width: 1200px;
+            padding: 15px;
+            height: auto;
+            background-color: #FFFFFF;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            border-radius: 10px;
+
+        }
+
+        .firstrow{
+            display:flex;
+        }
+
+        .firstcol
+        {
+            font-size:25px;
+        }
+
+        .tbody{
+            font-family:Arial, Helvetica, sans-serif ;
+        }
+
+        .aside{
+            width:600px;
+        }
+
+        .secondrow{
+            display:flex;
+            justify-content: right;
+            margin-bottom: 0px;
+        }
+
+        .secondcol
+        {
+            font-size:20px;
+            height: 650px;
+        }
+
+        .fieldset
+        {
+            border-radius: 5px;
+        }
+
+        .inputrow1
+        {
+            margin-top: 15px;
+        }
+
+        .next
+        {
+            font-family:Arial, Helvetica, sans-serif ;
+        }
+
+        .card
+        {
+            height:auto;
+            border-radius:5px;
+        }
+        .cname
+        {
+            height: 50px;
+            background:#dfe6e9;
+            margin-top: 15px;
+            border-radius: 5px 5px 0px 0px;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            font-size: 25px;
+            padding: 10px;
+            color:blue
+        }
+        .cardrow
+        {
+            display:flex;
+            justify-content:left;
+            align-items: center;
+            padding: 15px;
+            font-size: 20px;
+        }
+
+        .over
+        {
+            height: 30px;
+            background:#dfe6e9;
+            margin-top: 15px;
+            border-radius: 0px 0px 5px 5px;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            font-size: 18px;
+            padding: 10px;
+            color:blue
+        }
+
+        
+
+
+
+    </style>
+
+
+</head>
+
+
+
+
+<body>
+
+    <div class="root">
+        <div class="subdiv">
+            <div class="row firstrow">
+                <div class="col s12 firstcol">
+                    <div id="entry">
+                    </div>
+
+                    <table>
+                        <tbody id="tbody" class="tbody">
+                        </tbody>
+                    </table>
+                </div>
+                <aside class="aside">
+                    <div class="row secondrow">
+                        <div class="col s12 secondcol">
+                            <fieldset class="fieldset">
+
+                                <fieldset class="fieldset">
+                                    Create New Company
+                                </fieldset>
+                                <div class="row inputrow1">
+                                    <div class="input-field col s12">
+                                        <input required type="text" name="Name" id="Name" class="validate">
+                                        <label for="first_name">Name</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input type="text" required name="Address" id="Address" class="validate">
+                                        <label for="first_name">Address</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input type="text" required name="Revenue" id="Revenue" class="validate">
+                                        <label for="first_name">Revenue</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input type="text" required name="Phone" id="Phone" class="validate">
+                                        <label for="first_name">Phone</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s12">
+                                        <button class="btn waves-effect waves-light" id="btn">Save
+                                            <i class="material-icons right">send</i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="row secondrow">
+                        <div class="col s12 secondcol">
+                            <fieldset class="fieldset">
+
+                                <fieldset class="fieldset">
+                                    Create New Person
+                                </fieldset>
+                                <div class="row inputrow1">
+                                    <div class="input-field col s12">
+                                        <input type="text" required name="pname" id="pname" class="validate">
+                                        <label for="first_name">Name</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input type="text" required name="paddress" id="paddress" class="validate">
+                                        <label for="first_name">Address</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <select name="pcompany" required id="pcompany">
+                                            <option value="">Company</option>
+                                        </select>
+                                        <label>Company</label>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col s12">
+                                        <button class="btn waves-effect waves-light" id="personbtn">Save
+                                            <i class="material-icons right">send</i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                </aside>
+
+
+            </div>
+            <div class="next" id="next">
+                
+            </div>
+        </div>
+
+
+</body>
+
+
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</html>
